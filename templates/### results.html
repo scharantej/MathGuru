@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ topic }} Tutorial Results</title>
+</head>
+<body>
+
+<h1>{{ topic }} Tutorial Results</h1>
+
+<!-- Quiz Score Section -->
+<h2>Your Score: {{ score }}</h2>
+
+<!-- Explanation Section -->
+<h2>Question Explanations</h2>
+<ol>
+{% for question, answer in answers.items() %}
+<li>
+<b>Question: </b> {{ question }} <br>
+<b>Your Answer: </b> {{ answer }} <br>
+<b>Correct Answer: </b> {{ correct_answers[question] }} <br>
+<b>Explanation: </b> {{ explanations[question] }}
+</li>
+{% endfor %}
+</ol>
+
+</body>
+</html>
+
