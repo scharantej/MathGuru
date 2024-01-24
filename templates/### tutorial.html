@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ topic }} Tutorial</title>
+</head>
+<body>
+
+<h1>{{ topic }} Tutorial</h1>
+
+<!-- Tutorial Content Section -->
+<p>
+Here, you will learn about the fundamental concepts of {{ topic }}. We will cover various topics, including definitions, formulas, and examples.
+</p>
+
+<!-- Quiz Section -->
+<h2>Quiz</h2>
+<form action="/quiz/{{ topic }}" method="POST">
+<ol>
+<li>
+What is the square root of 25?
+<input type="radio" name="q1" value="5"> 5
+<input type="radio" name="q1" value="10"> 10
+<input type="radio" name="q1" value="15"> 15
+<input type="radio" name="q1" value="20"> 20
+</li>
+<li>
+What is the area of a circle with a radius of 5?
+<input type="radio" name="q2" value="25π"> 25π
+<input type="radio" name="q2" value="50π"> 50π
+<input type="radio" name="q2" value="75π"> 75π
+<input type="radio" name="q2" value="100π"> 100π
+</li>
+<li>
+What is the derivative of x^2?
+<input type="radio" name="q3" value="2x"> 2x
+<input type="radio" name="q3" value="3x"> 3x
+<input type="radio" name="q3" value="4x"> 4x
+<input type="radio" name="q3" value="5x"> 5x
+</li>
+</ol>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
